@@ -1,0 +1,4356 @@
+{
+  "summary": {
+    "total_anomalies": 617,
+    "anomalies_by_method": {
+      "z_score": 614,
+      "efficiency_logic": 3
+    },
+    "anomalies_by_sensor": {
+      "power_consumption": 606,
+      "health_metric (power/control_signal)": 3,
+      "flow_rate": 2,
+      "motor_vibration": 6
+    },
+    "baseline_duration_s": 300.0,
+    "z_score_threshold": 3.0,
+    "efficiency_z_threshold": 3.0
+  },
+  "baseline_statistics": {
+    "mean": {
+      "power_consumption": 2.2487793333333337,
+      "flow_rate": 49.99546866666666,
+      "motor_vibration": 0.29790066666666665,
+      "water_temp": 20.013375666666665,
+      "health_metric": 6.805751817151674
+    },
+    "std": {
+      "power_consumption": 0.32970608453614575,
+      "flow_rate": 0.20267922021240486,
+      "motor_vibration": 0.02019732753826229,
+      "water_temp": 0.11189979081827102,
+      "health_metric": 0.3157922405259734
+    },
+    "n_samples_used": 299
+  },
+  "anomalies": [
+    {
+      "time": 1.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.323,
+      "description": "power_consumption is 5.32\u03c3 below the normal baseline (observed=0.4936, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 65.0,
+      "sensor_type": "health_metric (power/control_signal)",
+      "severity_score": 5.187,
+      "description": "Efficiency anomaly at t=65.0s: water_temp is stable (19.951\u00b0C \u2248 setpoint) but power consumption is disproportionately high relative to control signal (health_metric=7.789, 3.11\u03c3 above baseline). Consistent with coolant/refrigerant leakage degrading cooling efficiency while PID compensates by increasing compressor demand.",
+      "detection_method": "efficiency_logic"
+    },
+    {
+      "time": 76.0,
+      "sensor_type": "health_metric (power/control_signal)",
+      "severity_score": 5.195,
+      "description": "Efficiency anomaly at t=76.0s: water_temp is stable (20.008\u00b0C \u2248 setpoint) but power consumption is disproportionately high relative to control signal (health_metric=7.790, 3.12\u03c3 above baseline). Consistent with coolant/refrigerant leakage degrading cooling efficiency while PID compensates by increasing compressor demand.",
+      "detection_method": "efficiency_logic"
+    },
+    {
+      "time": 161.0,
+      "sensor_type": "flow_rate",
+      "severity_score": 3.09,
+      "description": "flow_rate is 3.09\u03c3 below the normal baseline (observed=49.3691, baseline_mean=49.9955).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 171.0,
+      "sensor_type": "health_metric (power/control_signal)",
+      "severity_score": 7.002,
+      "description": "Efficiency anomaly at t=171.0s: water_temp is stable (20.011\u00b0C \u2248 setpoint) but power consumption is disproportionately high relative to control signal (health_metric=8.132, 4.20\u03c3 above baseline). Consistent with coolant/refrigerant leakage degrading cooling efficiency while PID compensates by increasing compressor demand.",
+      "detection_method": "efficiency_logic"
+    },
+    {
+      "time": 276.0,
+      "sensor_type": "flow_rate",
+      "severity_score": 3.194,
+      "description": "flow_rate is 3.19\u03c3 above the normal baseline (observed=50.6429, baseline_mean=49.9955).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 306.0,
+      "sensor_type": "motor_vibration",
+      "severity_score": 3.03,
+      "description": "motor_vibration is 3.03\u03c3 below the normal baseline (observed=0.2367, baseline_mean=0.2979).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 337.0,
+      "sensor_type": "motor_vibration",
+      "severity_score": 3.03,
+      "description": "motor_vibration is 3.03\u03c3 above the normal baseline (observed=0.3591, baseline_mean=0.2979).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 366.0,
+      "sensor_type": "motor_vibration",
+      "severity_score": 3.075,
+      "description": "motor_vibration is 3.07\u03c3 above the normal baseline (observed=0.3600, baseline_mean=0.2979).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 396.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 3.536,
+      "description": "power_consumption is 3.54\u03c3 above the normal baseline (observed=3.4147, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 397.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 3.27,
+      "description": "power_consumption is 3.27\u03c3 above the normal baseline (observed=3.3269, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 398.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 3.594,
+      "description": "power_consumption is 3.59\u03c3 above the normal baseline (observed=3.4339, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 399.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 3.188,
+      "description": "power_consumption is 3.19\u03c3 above the normal baseline (observed=3.2998, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 400.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 3.936,
+      "description": "power_consumption is 3.94\u03c3 above the normal baseline (observed=3.5466, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 401.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 3.46,
+      "description": "power_consumption is 3.46\u03c3 above the normal baseline (observed=3.3895, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 402.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.227,
+      "description": "power_consumption is 4.23\u03c3 above the normal baseline (observed=3.6423, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 403.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.938,
+      "description": "power_consumption is 4.94\u03c3 above the normal baseline (observed=3.8769, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 404.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.221,
+      "description": "power_consumption is 4.22\u03c3 above the normal baseline (observed=3.6406, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 405.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.153,
+      "description": "power_consumption is 4.15\u03c3 above the normal baseline (observed=3.6179, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 406.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.25,
+      "description": "power_consumption is 4.25\u03c3 above the normal baseline (observed=3.6500, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 407.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 3.393,
+      "description": "power_consumption is 3.39\u03c3 above the normal baseline (observed=3.3674, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 408.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.049,
+      "description": "power_consumption is 5.05\u03c3 above the normal baseline (observed=3.9134, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 409.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.917,
+      "description": "power_consumption is 4.92\u03c3 above the normal baseline (observed=3.8698, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 410.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.855,
+      "description": "power_consumption is 4.85\u03c3 above the normal baseline (observed=3.8495, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 411.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.452,
+      "description": "power_consumption is 4.45\u03c3 above the normal baseline (observed=3.7166, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 412.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.092,
+      "description": "power_consumption is 6.09\u03c3 above the normal baseline (observed=4.2574, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 413.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.804,
+      "description": "power_consumption is 5.80\u03c3 above the normal baseline (observed=4.1624, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 414.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.825,
+      "description": "power_consumption is 5.82\u03c3 above the normal baseline (observed=4.1692, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 415.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.529,
+      "description": "power_consumption is 5.53\u03c3 above the normal baseline (observed=4.0718, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 416.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.385,
+      "description": "power_consumption is 6.39\u03c3 above the normal baseline (observed=4.3541, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 417.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.33,
+      "description": "power_consumption is 6.33\u03c3 above the normal baseline (observed=4.3359, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 418.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.213,
+      "description": "power_consumption is 6.21\u03c3 above the normal baseline (observed=4.2972, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 419.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.454,
+      "description": "power_consumption is 6.45\u03c3 above the normal baseline (observed=4.3767, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 420.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.037,
+      "description": "power_consumption is 6.04\u03c3 above the normal baseline (observed=4.2393, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 421.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.505,
+      "description": "power_consumption is 7.50\u03c3 above the normal baseline (observed=4.7231, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 422.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.037,
+      "description": "power_consumption is 7.04\u03c3 above the normal baseline (observed=4.5688, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 423.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.434,
+      "description": "power_consumption is 6.43\u03c3 above the normal baseline (observed=4.3702, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 424.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.83,
+      "description": "power_consumption is 7.83\u03c3 above the normal baseline (observed=4.8303, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 425.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.479,
+      "description": "power_consumption is 7.48\u03c3 above the normal baseline (observed=4.7146, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 426.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.642,
+      "description": "power_consumption is 7.64\u03c3 above the normal baseline (observed=4.7683, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 427.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 9.047,
+      "description": "power_consumption is 9.05\u03c3 above the normal baseline (observed=5.2315, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 428.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.343,
+      "description": "power_consumption is 8.34\u03c3 above the normal baseline (observed=4.9994, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 429.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.267,
+      "description": "power_consumption is 8.27\u03c3 above the normal baseline (observed=4.9746, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 430.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.169,
+      "description": "power_consumption is 8.17\u03c3 above the normal baseline (observed=4.9423, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 431.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.447,
+      "description": "power_consumption is 7.45\u03c3 above the normal baseline (observed=4.7040, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 432.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.836,
+      "description": "power_consumption is 7.84\u03c3 above the normal baseline (observed=4.8324, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 433.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.739,
+      "description": "power_consumption is 7.74\u03c3 above the normal baseline (observed=4.8005, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 434.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.464,
+      "description": "power_consumption is 8.46\u03c3 above the normal baseline (observed=5.0395, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 435.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.693,
+      "description": "power_consumption is 7.69\u03c3 above the normal baseline (observed=4.7851, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 436.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.776,
+      "description": "power_consumption is 7.78\u03c3 above the normal baseline (observed=4.8125, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 437.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.645,
+      "description": "power_consumption is 7.64\u03c3 above the normal baseline (observed=4.7693, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 438.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.629,
+      "description": "power_consumption is 8.63\u03c3 above the normal baseline (observed=5.0937, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 439.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.885,
+      "description": "power_consumption is 7.89\u03c3 above the normal baseline (observed=4.8486, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 440.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.683,
+      "description": "power_consumption is 7.68\u03c3 above the normal baseline (observed=4.7819, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 441.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.619,
+      "description": "power_consumption is 7.62\u03c3 above the normal baseline (observed=4.7608, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 441.0,
+      "sensor_type": "motor_vibration",
+      "severity_score": 3.174,
+      "description": "motor_vibration is 3.17\u03c3 above the normal baseline (observed=0.3620, baseline_mean=0.2979).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 442.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.634,
+      "description": "power_consumption is 7.63\u03c3 above the normal baseline (observed=4.7658, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 443.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.36,
+      "description": "power_consumption is 8.36\u03c3 above the normal baseline (observed=5.0052, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 444.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.344,
+      "description": "power_consumption is 8.34\u03c3 above the normal baseline (observed=4.9998, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 445.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.913,
+      "description": "power_consumption is 7.91\u03c3 above the normal baseline (observed=4.8577, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 446.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.645,
+      "description": "power_consumption is 7.64\u03c3 above the normal baseline (observed=4.7693, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 447.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.615,
+      "description": "power_consumption is 7.62\u03c3 above the normal baseline (observed=4.7596, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 448.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.698,
+      "description": "power_consumption is 7.70\u03c3 above the normal baseline (observed=4.7868, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 449.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.139,
+      "description": "power_consumption is 7.14\u03c3 above the normal baseline (observed=4.6027, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 450.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.723,
+      "description": "power_consumption is 6.72\u03c3 above the normal baseline (observed=4.4653, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 451.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.482,
+      "description": "power_consumption is 6.48\u03c3 above the normal baseline (observed=4.3859, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 452.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.52,
+      "description": "power_consumption is 6.52\u03c3 above the normal baseline (observed=4.3984, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 453.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.226,
+      "description": "power_consumption is 6.23\u03c3 above the normal baseline (observed=4.3015, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 454.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.154,
+      "description": "power_consumption is 6.15\u03c3 above the normal baseline (observed=4.2779, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 455.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.841,
+      "description": "power_consumption is 6.84\u03c3 above the normal baseline (observed=4.5043, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 456.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.781,
+      "description": "power_consumption is 6.78\u03c3 above the normal baseline (observed=4.4844, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 457.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.043,
+      "description": "power_consumption is 6.04\u03c3 above the normal baseline (observed=4.2411, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 458.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.89,
+      "description": "power_consumption is 5.89\u03c3 above the normal baseline (observed=4.1909, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 459.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.298,
+      "description": "power_consumption is 5.30\u03c3 above the normal baseline (observed=3.9954, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 460.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.391,
+      "description": "power_consumption is 5.39\u03c3 above the normal baseline (observed=4.0263, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 461.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.69,
+      "description": "power_consumption is 5.69\u03c3 above the normal baseline (observed=4.1247, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 462.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.068,
+      "description": "power_consumption is 5.07\u03c3 above the normal baseline (observed=3.9198, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 463.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.085,
+      "description": "power_consumption is 5.09\u03c3 above the normal baseline (observed=3.9254, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 464.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.025,
+      "description": "power_consumption is 5.02\u03c3 above the normal baseline (observed=3.9055, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 465.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.694,
+      "description": "power_consumption is 4.69\u03c3 above the normal baseline (observed=3.7963, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 466.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.078,
+      "description": "power_consumption is 4.08\u03c3 above the normal baseline (observed=3.5934, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 467.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 3.562,
+      "description": "power_consumption is 3.56\u03c3 above the normal baseline (observed=3.4232, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 468.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.036,
+      "description": "power_consumption is 4.04\u03c3 above the normal baseline (observed=3.5795, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 469.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 3.491,
+      "description": "power_consumption is 3.49\u03c3 above the normal baseline (observed=3.3997, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 470.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.075,
+      "description": "power_consumption is 4.08\u03c3 above the normal baseline (observed=3.5924, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 471.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.858,
+      "description": "power_consumption is 4.86\u03c3 above the normal baseline (observed=3.8504, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 472.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.573,
+      "description": "power_consumption is 4.57\u03c3 above the normal baseline (observed=3.7564, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 473.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.561,
+      "description": "power_consumption is 4.56\u03c3 above the normal baseline (observed=3.7527, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 474.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 3.897,
+      "description": "power_consumption is 3.90\u03c3 above the normal baseline (observed=3.5338, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 475.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.228,
+      "description": "power_consumption is 4.23\u03c3 above the normal baseline (observed=3.6428, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 476.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.6,
+      "description": "power_consumption is 4.60\u03c3 above the normal baseline (observed=3.7653, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 477.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.358,
+      "description": "power_consumption is 4.36\u03c3 above the normal baseline (observed=3.6856, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 478.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.183,
+      "description": "power_consumption is 4.18\u03c3 above the normal baseline (observed=3.6279, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 479.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.241,
+      "description": "power_consumption is 4.24\u03c3 above the normal baseline (observed=3.6471, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 480.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.993,
+      "description": "power_consumption is 4.99\u03c3 above the normal baseline (observed=3.8950, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 481.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.424,
+      "description": "power_consumption is 4.42\u03c3 above the normal baseline (observed=3.7075, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 482.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.212,
+      "description": "power_consumption is 4.21\u03c3 above the normal baseline (observed=3.6374, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 483.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.692,
+      "description": "power_consumption is 4.69\u03c3 above the normal baseline (observed=3.7958, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 484.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.438,
+      "description": "power_consumption is 4.44\u03c3 above the normal baseline (observed=3.7121, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 485.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.776,
+      "description": "power_consumption is 4.78\u03c3 above the normal baseline (observed=3.8234, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 486.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.342,
+      "description": "power_consumption is 4.34\u03c3 above the normal baseline (observed=3.6805, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 487.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.227,
+      "description": "power_consumption is 5.23\u03c3 above the normal baseline (observed=3.9720, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 488.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.803,
+      "description": "power_consumption is 4.80\u03c3 above the normal baseline (observed=3.8322, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 489.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.03,
+      "description": "power_consumption is 5.03\u03c3 above the normal baseline (observed=3.9073, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 490.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.85,
+      "description": "power_consumption is 5.85\u03c3 above the normal baseline (observed=4.1776, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 491.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.093,
+      "description": "power_consumption is 5.09\u03c3 above the normal baseline (observed=3.9280, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 492.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.93,
+      "description": "power_consumption is 4.93\u03c3 above the normal baseline (observed=3.8742, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 493.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.539,
+      "description": "power_consumption is 5.54\u03c3 above the normal baseline (observed=4.0750, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 494.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.263,
+      "description": "power_consumption is 7.26\u03c3 above the normal baseline (observed=4.6433, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 495.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.079,
+      "description": "power_consumption is 7.08\u03c3 above the normal baseline (observed=4.5827, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 496.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.381,
+      "description": "power_consumption is 6.38\u03c3 above the normal baseline (observed=4.3526, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 497.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.497,
+      "description": "power_consumption is 6.50\u03c3 above the normal baseline (observed=4.3909, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 498.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.893,
+      "description": "power_consumption is 6.89\u03c3 above the normal baseline (observed=4.5214, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 499.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.691,
+      "description": "power_consumption is 7.69\u03c3 above the normal baseline (observed=4.7845, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 500.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.029,
+      "description": "power_consumption is 7.03\u03c3 above the normal baseline (observed=4.5663, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 501.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.256,
+      "description": "power_consumption is 7.26\u03c3 above the normal baseline (observed=4.6411, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 502.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.55,
+      "description": "power_consumption is 6.55\u03c3 above the normal baseline (observed=4.4083, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 503.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.69,
+      "description": "power_consumption is 6.69\u03c3 above the normal baseline (observed=4.4545, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 504.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.58,
+      "description": "power_consumption is 6.58\u03c3 above the normal baseline (observed=4.4182, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 505.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.738,
+      "description": "power_consumption is 7.74\u03c3 above the normal baseline (observed=4.8002, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 506.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.979,
+      "description": "power_consumption is 7.98\u03c3 above the normal baseline (observed=4.8796, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 507.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.421,
+      "description": "power_consumption is 7.42\u03c3 above the normal baseline (observed=4.6954, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 508.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.985,
+      "description": "power_consumption is 7.98\u03c3 above the normal baseline (observed=4.8814, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 509.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.627,
+      "description": "power_consumption is 8.63\u03c3 above the normal baseline (observed=5.0932, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 510.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 9.12,
+      "description": "power_consumption is 9.12\u03c3 above the normal baseline (observed=5.2557, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 511.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.453,
+      "description": "power_consumption is 8.45\u03c3 above the normal baseline (observed=5.0358, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 512.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.825,
+      "description": "power_consumption is 8.83\u03c3 above the normal baseline (observed=5.1585, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 513.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.975,
+      "description": "power_consumption is 8.98\u03c3 above the normal baseline (observed=5.2080, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 514.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 9.471,
+      "description": "power_consumption is 9.47\u03c3 above the normal baseline (observed=5.3715, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 515.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 9.338,
+      "description": "power_consumption is 9.34\u03c3 above the normal baseline (observed=5.3277, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 516.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.433,
+      "description": "power_consumption is 8.43\u03c3 above the normal baseline (observed=5.0292, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 517.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.694,
+      "description": "power_consumption is 8.69\u03c3 above the normal baseline (observed=5.1154, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 518.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 9.35,
+      "description": "power_consumption is 9.35\u03c3 above the normal baseline (observed=5.3315, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 519.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 9.076,
+      "description": "power_consumption is 9.08\u03c3 above the normal baseline (observed=5.2413, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 520.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.383,
+      "description": "power_consumption is 8.38\u03c3 above the normal baseline (observed=5.0128, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 521.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.755,
+      "description": "power_consumption is 8.76\u03c3 above the normal baseline (observed=5.1354, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 522.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 9.193,
+      "description": "power_consumption is 9.19\u03c3 above the normal baseline (observed=5.2797, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 523.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.66,
+      "description": "power_consumption is 8.66\u03c3 above the normal baseline (observed=5.1041, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 524.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.352,
+      "description": "power_consumption is 8.35\u03c3 above the normal baseline (observed=5.0025, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 525.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.602,
+      "description": "power_consumption is 8.60\u03c3 above the normal baseline (observed=5.0850, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 526.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 9.021,
+      "description": "power_consumption is 9.02\u03c3 above the normal baseline (observed=5.2230, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 527.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 10.247,
+      "description": "power_consumption is 10.25\u03c3 above the normal baseline (observed=5.6273, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 528.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 9.485,
+      "description": "power_consumption is 9.48\u03c3 above the normal baseline (observed=5.3760, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 529.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.839,
+      "description": "power_consumption is 8.84\u03c3 above the normal baseline (observed=5.1629, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 530.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 9.238,
+      "description": "power_consumption is 9.24\u03c3 above the normal baseline (observed=5.2945, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 531.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.498,
+      "description": "power_consumption is 8.50\u03c3 above the normal baseline (observed=5.0506, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 532.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.202,
+      "description": "power_consumption is 8.20\u03c3 above the normal baseline (observed=4.9530, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 533.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.586,
+      "description": "power_consumption is 8.59\u03c3 above the normal baseline (observed=5.0797, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 534.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.601,
+      "description": "power_consumption is 8.60\u03c3 above the normal baseline (observed=5.0846, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 535.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.916,
+      "description": "power_consumption is 8.92\u03c3 above the normal baseline (observed=5.1885, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 536.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 9.288,
+      "description": "power_consumption is 9.29\u03c3 above the normal baseline (observed=5.3110, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 537.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 9.16,
+      "description": "power_consumption is 9.16\u03c3 above the normal baseline (observed=5.2688, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 538.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.441,
+      "description": "power_consumption is 8.44\u03c3 above the normal baseline (observed=5.0319, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 539.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.632,
+      "description": "power_consumption is 8.63\u03c3 above the normal baseline (observed=5.0948, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 540.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.989,
+      "description": "power_consumption is 8.99\u03c3 above the normal baseline (observed=5.2126, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 541.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.904,
+      "description": "power_consumption is 7.90\u03c3 above the normal baseline (observed=4.8549, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 542.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.414,
+      "description": "power_consumption is 8.41\u03c3 above the normal baseline (observed=5.0228, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 543.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.404,
+      "description": "power_consumption is 8.40\u03c3 above the normal baseline (observed=5.0196, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 544.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.933,
+      "description": "power_consumption is 8.93\u03c3 above the normal baseline (observed=5.1942, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 545.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.685,
+      "description": "power_consumption is 7.68\u03c3 above the normal baseline (observed=4.7825, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 546.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.561,
+      "description": "power_consumption is 7.56\u03c3 above the normal baseline (observed=4.7418, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 547.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.583,
+      "description": "power_consumption is 7.58\u03c3 above the normal baseline (observed=4.7488, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 548.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.361,
+      "description": "power_consumption is 7.36\u03c3 above the normal baseline (observed=4.6758, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 549.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.197,
+      "description": "power_consumption is 7.20\u03c3 above the normal baseline (observed=4.6218, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 550.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.73,
+      "description": "power_consumption is 6.73\u03c3 above the normal baseline (observed=4.4677, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 551.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.916,
+      "description": "power_consumption is 6.92\u03c3 above the normal baseline (observed=4.5289, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 552.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.875,
+      "description": "power_consumption is 6.88\u03c3 above the normal baseline (observed=4.5156, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 553.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.325,
+      "description": "power_consumption is 6.32\u03c3 above the normal baseline (observed=4.3341, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 554.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.76,
+      "description": "power_consumption is 5.76\u03c3 above the normal baseline (observed=4.1478, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 555.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.647,
+      "description": "power_consumption is 6.65\u03c3 above the normal baseline (observed=4.4405, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 556.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.613,
+      "description": "power_consumption is 5.61\u03c3 above the normal baseline (observed=4.0994, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 557.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.825,
+      "description": "power_consumption is 5.82\u03c3 above the normal baseline (observed=4.1693, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 558.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.673,
+      "description": "power_consumption is 5.67\u03c3 above the normal baseline (observed=4.1192, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 559.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.264,
+      "description": "power_consumption is 5.26\u03c3 above the normal baseline (observed=3.9844, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 560.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.897,
+      "description": "power_consumption is 5.90\u03c3 above the normal baseline (observed=4.1932, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 561.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.08,
+      "description": "power_consumption is 5.08\u03c3 above the normal baseline (observed=3.9237, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 562.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.213,
+      "description": "power_consumption is 5.21\u03c3 above the normal baseline (observed=3.9674, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 563.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.696,
+      "description": "power_consumption is 4.70\u03c3 above the normal baseline (observed=3.7971, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 564.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.106,
+      "description": "power_consumption is 5.11\u03c3 above the normal baseline (observed=3.9322, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 565.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.809,
+      "description": "power_consumption is 4.81\u03c3 above the normal baseline (observed=3.8342, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 566.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.579,
+      "description": "power_consumption is 4.58\u03c3 above the normal baseline (observed=3.7586, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 567.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.99,
+      "description": "power_consumption is 4.99\u03c3 above the normal baseline (observed=3.8939, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 568.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.84,
+      "description": "power_consumption is 4.84\u03c3 above the normal baseline (observed=3.8444, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 569.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.247,
+      "description": "power_consumption is 5.25\u03c3 above the normal baseline (observed=3.9786, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 570.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.412,
+      "description": "power_consumption is 5.41\u03c3 above the normal baseline (observed=4.0332, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 571.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.227,
+      "description": "power_consumption is 5.23\u03c3 above the normal baseline (observed=3.9720, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 572.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.963,
+      "description": "power_consumption is 4.96\u03c3 above the normal baseline (observed=3.8851, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 573.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.771,
+      "description": "power_consumption is 4.77\u03c3 above the normal baseline (observed=3.8217, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 574.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.766,
+      "description": "power_consumption is 4.77\u03c3 above the normal baseline (observed=3.8203, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 575.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.67,
+      "description": "power_consumption is 4.67\u03c3 above the normal baseline (observed=3.7885, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 576.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 3.867,
+      "description": "power_consumption is 3.87\u03c3 above the normal baseline (observed=3.5238, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 577.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 3.325,
+      "description": "power_consumption is 3.32\u03c3 above the normal baseline (observed=3.3450, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 578.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 3.552,
+      "description": "power_consumption is 3.55\u03c3 above the normal baseline (observed=3.4200, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 579.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.756,
+      "description": "power_consumption is 4.76\u03c3 above the normal baseline (observed=3.8167, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 580.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.811,
+      "description": "power_consumption is 4.81\u03c3 above the normal baseline (observed=3.8351, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 581.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.508,
+      "description": "power_consumption is 5.51\u03c3 above the normal baseline (observed=4.0649, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 582.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.6,
+      "description": "power_consumption is 4.60\u03c3 above the normal baseline (observed=3.7653, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 583.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.199,
+      "description": "power_consumption is 5.20\u03c3 above the normal baseline (observed=3.9630, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 584.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 3.944,
+      "description": "power_consumption is 3.94\u03c3 above the normal baseline (observed=3.5491, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 585.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.424,
+      "description": "power_consumption is 5.42\u03c3 above the normal baseline (observed=4.0370, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 586.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.842,
+      "description": "power_consumption is 4.84\u03c3 above the normal baseline (observed=3.8452, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 587.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.37,
+      "description": "power_consumption is 5.37\u03c3 above the normal baseline (observed=4.0192, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 588.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.873,
+      "description": "power_consumption is 4.87\u03c3 above the normal baseline (observed=3.8553, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 589.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.443,
+      "description": "power_consumption is 5.44\u03c3 above the normal baseline (observed=4.0435, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 590.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.303,
+      "description": "power_consumption is 5.30\u03c3 above the normal baseline (observed=3.9972, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 591.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.189,
+      "description": "power_consumption is 6.19\u03c3 above the normal baseline (observed=4.2892, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 592.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.206,
+      "description": "power_consumption is 7.21\u03c3 above the normal baseline (observed=4.6248, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 593.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.642,
+      "description": "power_consumption is 5.64\u03c3 above the normal baseline (observed=4.1090, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 594.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.415,
+      "description": "power_consumption is 6.41\u03c3 above the normal baseline (observed=4.3637, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 595.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.859,
+      "description": "power_consumption is 6.86\u03c3 above the normal baseline (observed=4.5103, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 596.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.737,
+      "description": "power_consumption is 6.74\u03c3 above the normal baseline (observed=4.4701, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 597.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.55,
+      "description": "power_consumption is 6.55\u03c3 above the normal baseline (observed=4.4084, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 598.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.149,
+      "description": "power_consumption is 7.15\u03c3 above the normal baseline (observed=4.6059, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 599.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.988,
+      "description": "power_consumption is 6.99\u03c3 above the normal baseline (observed=4.5529, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 600.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.07,
+      "description": "power_consumption is 7.07\u03c3 above the normal baseline (observed=4.5798, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 601.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.706,
+      "description": "power_consumption is 6.71\u03c3 above the normal baseline (observed=4.4599, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 602.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.476,
+      "description": "power_consumption is 6.48\u03c3 above the normal baseline (observed=4.3838, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 603.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.965,
+      "description": "power_consumption is 6.96\u03c3 above the normal baseline (observed=4.5451, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 604.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.58,
+      "description": "power_consumption is 7.58\u03c3 above the normal baseline (observed=4.7480, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 605.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.161,
+      "description": "power_consumption is 7.16\u03c3 above the normal baseline (observed=4.6097, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 606.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.214,
+      "description": "power_consumption is 7.21\u03c3 above the normal baseline (observed=4.6273, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 607.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.711,
+      "description": "power_consumption is 7.71\u03c3 above the normal baseline (observed=4.7912, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 608.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.377,
+      "description": "power_consumption is 8.38\u03c3 above the normal baseline (observed=5.0106, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 609.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.399,
+      "description": "power_consumption is 8.40\u03c3 above the normal baseline (observed=5.0180, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 610.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.906,
+      "description": "power_consumption is 7.91\u03c3 above the normal baseline (observed=4.8556, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 611.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 9.033,
+      "description": "power_consumption is 9.03\u03c3 above the normal baseline (observed=5.2271, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 612.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.664,
+      "description": "power_consumption is 8.66\u03c3 above the normal baseline (observed=5.1052, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 613.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.571,
+      "description": "power_consumption is 8.57\u03c3 above the normal baseline (observed=5.0748, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 614.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.964,
+      "description": "power_consumption is 8.96\u03c3 above the normal baseline (observed=5.2044, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 615.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.273,
+      "description": "power_consumption is 8.27\u03c3 above the normal baseline (observed=4.9764, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 616.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.228,
+      "description": "power_consumption is 8.23\u03c3 above the normal baseline (observed=4.9615, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 617.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.807,
+      "description": "power_consumption is 7.81\u03c3 above the normal baseline (observed=4.8229, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 618.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.179,
+      "description": "power_consumption is 8.18\u03c3 above the normal baseline (observed=4.9456, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 619.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.931,
+      "description": "power_consumption is 7.93\u03c3 above the normal baseline (observed=4.8638, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 620.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.913,
+      "description": "power_consumption is 8.91\u03c3 above the normal baseline (observed=5.1873, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 621.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.041,
+      "description": "power_consumption is 8.04\u03c3 above the normal baseline (observed=4.8999, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 622.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 9.733,
+      "description": "power_consumption is 9.73\u03c3 above the normal baseline (observed=5.4578, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 623.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 9.343,
+      "description": "power_consumption is 9.34\u03c3 above the normal baseline (observed=5.3292, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 624.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.79,
+      "description": "power_consumption is 8.79\u03c3 above the normal baseline (observed=5.1469, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 625.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.54,
+      "description": "power_consumption is 8.54\u03c3 above the normal baseline (observed=5.0646, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 626.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.822,
+      "description": "power_consumption is 8.82\u03c3 above the normal baseline (observed=5.1573, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 627.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 9.176,
+      "description": "power_consumption is 9.18\u03c3 above the normal baseline (observed=5.2742, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 628.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.941,
+      "description": "power_consumption is 8.94\u03c3 above the normal baseline (observed=5.1967, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 629.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 9.154,
+      "description": "power_consumption is 9.15\u03c3 above the normal baseline (observed=5.2670, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 630.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 9.11,
+      "description": "power_consumption is 9.11\u03c3 above the normal baseline (observed=5.2524, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 631.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 9.074,
+      "description": "power_consumption is 9.07\u03c3 above the normal baseline (observed=5.2406, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 632.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 9.02,
+      "description": "power_consumption is 9.02\u03c3 above the normal baseline (observed=5.2227, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 633.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 9.378,
+      "description": "power_consumption is 9.38\u03c3 above the normal baseline (observed=5.3409, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 634.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.034,
+      "description": "power_consumption is 8.03\u03c3 above the normal baseline (observed=4.8977, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 635.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.44,
+      "description": "power_consumption is 8.44\u03c3 above the normal baseline (observed=5.0316, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 636.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.95,
+      "description": "power_consumption is 8.95\u03c3 above the normal baseline (observed=5.1998, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 637.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 9.163,
+      "description": "power_consumption is 9.16\u03c3 above the normal baseline (observed=5.2698, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 638.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.514,
+      "description": "power_consumption is 8.51\u03c3 above the normal baseline (observed=5.0560, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 639.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.928,
+      "description": "power_consumption is 8.93\u03c3 above the normal baseline (observed=5.1923, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 640.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 9.353,
+      "description": "power_consumption is 9.35\u03c3 above the normal baseline (observed=5.3325, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 641.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 9.354,
+      "description": "power_consumption is 9.35\u03c3 above the normal baseline (observed=5.3328, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 642.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.707,
+      "description": "power_consumption is 7.71\u03c3 above the normal baseline (observed=4.7897, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 643.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.66,
+      "description": "power_consumption is 7.66\u03c3 above the normal baseline (observed=4.7744, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 644.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.668,
+      "description": "power_consumption is 7.67\u03c3 above the normal baseline (observed=4.7769, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 645.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.52,
+      "description": "power_consumption is 7.52\u03c3 above the normal baseline (observed=4.7282, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 646.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.695,
+      "description": "power_consumption is 7.70\u03c3 above the normal baseline (observed=4.7860, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 647.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.291,
+      "description": "power_consumption is 7.29\u03c3 above the normal baseline (observed=4.6527, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 648.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.583,
+      "description": "power_consumption is 6.58\u03c3 above the normal baseline (observed=4.4191, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 649.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.462,
+      "description": "power_consumption is 6.46\u03c3 above the normal baseline (observed=4.3794, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 650.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.128,
+      "description": "power_consumption is 6.13\u03c3 above the normal baseline (observed=4.2691, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 651.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.275,
+      "description": "power_consumption is 6.27\u03c3 above the normal baseline (observed=4.3176, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 652.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.722,
+      "description": "power_consumption is 5.72\u03c3 above the normal baseline (observed=4.1355, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 653.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.89,
+      "description": "power_consumption is 6.89\u03c3 above the normal baseline (observed=4.5205, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 654.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.796,
+      "description": "power_consumption is 5.80\u03c3 above the normal baseline (observed=4.1597, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 655.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.207,
+      "description": "power_consumption is 5.21\u03c3 above the normal baseline (observed=3.9656, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 656.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.727,
+      "description": "power_consumption is 5.73\u03c3 above the normal baseline (observed=4.1370, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 657.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.568,
+      "description": "power_consumption is 5.57\u03c3 above the normal baseline (observed=4.0845, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 658.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.985,
+      "description": "power_consumption is 5.99\u03c3 above the normal baseline (observed=4.2221, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 659.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.233,
+      "description": "power_consumption is 5.23\u03c3 above the normal baseline (observed=3.9740, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 660.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.689,
+      "description": "power_consumption is 4.69\u03c3 above the normal baseline (observed=3.7948, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 661.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.773,
+      "description": "power_consumption is 4.77\u03c3 above the normal baseline (observed=3.8224, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 662.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.91,
+      "description": "power_consumption is 4.91\u03c3 above the normal baseline (observed=3.8676, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 663.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.587,
+      "description": "power_consumption is 4.59\u03c3 above the normal baseline (observed=3.7612, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 664.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.505,
+      "description": "power_consumption is 4.51\u03c3 above the normal baseline (observed=3.7342, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 665.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.355,
+      "description": "power_consumption is 5.36\u03c3 above the normal baseline (observed=4.0144, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 666.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.394,
+      "description": "power_consumption is 5.39\u03c3 above the normal baseline (observed=4.0271, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 667.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.104,
+      "description": "power_consumption is 5.10\u03c3 above the normal baseline (observed=3.9316, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 668.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.481,
+      "description": "power_consumption is 5.48\u03c3 above the normal baseline (observed=4.0560, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 669.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.585,
+      "description": "power_consumption is 4.59\u03c3 above the normal baseline (observed=3.7606, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 670.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 3.962,
+      "description": "power_consumption is 3.96\u03c3 above the normal baseline (observed=3.5551, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 671.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.544,
+      "description": "power_consumption is 4.54\u03c3 above the normal baseline (observed=3.7469, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 672.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.665,
+      "description": "power_consumption is 4.67\u03c3 above the normal baseline (observed=3.7870, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 673.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.082,
+      "description": "power_consumption is 4.08\u03c3 above the normal baseline (observed=3.5947, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 674.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 3.619,
+      "description": "power_consumption is 3.62\u03c3 above the normal baseline (observed=3.4421, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 675.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.064,
+      "description": "power_consumption is 4.06\u03c3 above the normal baseline (observed=3.5888, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 676.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.396,
+      "description": "power_consumption is 4.40\u03c3 above the normal baseline (observed=3.6982, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 677.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 3.746,
+      "description": "power_consumption is 3.75\u03c3 above the normal baseline (observed=3.4840, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 678.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 3.426,
+      "description": "power_consumption is 3.43\u03c3 above the normal baseline (observed=3.3785, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 679.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 3.704,
+      "description": "power_consumption is 3.70\u03c3 above the normal baseline (observed=3.4700, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 680.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.077,
+      "description": "power_consumption is 4.08\u03c3 above the normal baseline (observed=3.5930, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 681.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.383,
+      "description": "power_consumption is 4.38\u03c3 above the normal baseline (observed=3.6939, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 682.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.375,
+      "description": "power_consumption is 4.37\u03c3 above the normal baseline (observed=3.6911, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 683.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.145,
+      "description": "power_consumption is 5.15\u03c3 above the normal baseline (observed=3.9452, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 684.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.706,
+      "description": "power_consumption is 4.71\u03c3 above the normal baseline (observed=3.8004, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 685.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.659,
+      "description": "power_consumption is 4.66\u03c3 above the normal baseline (observed=3.7848, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 686.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.952,
+      "description": "power_consumption is 4.95\u03c3 above the normal baseline (observed=3.8814, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 687.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.852,
+      "description": "power_consumption is 4.85\u03c3 above the normal baseline (observed=3.8484, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 688.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.727,
+      "description": "power_consumption is 5.73\u03c3 above the normal baseline (observed=4.1371, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 689.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.725,
+      "description": "power_consumption is 4.73\u03c3 above the normal baseline (observed=3.8068, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 690.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.56,
+      "description": "power_consumption is 5.56\u03c3 above the normal baseline (observed=4.0820, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 691.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.759,
+      "description": "power_consumption is 5.76\u03c3 above the normal baseline (observed=4.1474, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 692.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.771,
+      "description": "power_consumption is 5.77\u03c3 above the normal baseline (observed=4.1515, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 693.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.102,
+      "description": "power_consumption is 6.10\u03c3 above the normal baseline (observed=4.2608, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 694.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.033,
+      "description": "power_consumption is 6.03\u03c3 above the normal baseline (observed=4.2378, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 695.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.218,
+      "description": "power_consumption is 6.22\u03c3 above the normal baseline (observed=4.2988, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 696.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.413,
+      "description": "power_consumption is 6.41\u03c3 above the normal baseline (observed=4.3631, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 697.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.223,
+      "description": "power_consumption is 5.22\u03c3 above the normal baseline (observed=3.9708, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 698.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.424,
+      "description": "power_consumption is 5.42\u03c3 above the normal baseline (observed=4.0372, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 699.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.277,
+      "description": "power_consumption is 6.28\u03c3 above the normal baseline (observed=4.3185, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 700.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.538,
+      "description": "power_consumption is 6.54\u03c3 above the normal baseline (observed=4.4043, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 701.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.564,
+      "description": "power_consumption is 6.56\u03c3 above the normal baseline (observed=4.4130, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 702.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.081,
+      "description": "power_consumption is 7.08\u03c3 above the normal baseline (observed=4.5833, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 703.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.693,
+      "description": "power_consumption is 6.69\u03c3 above the normal baseline (observed=4.4556, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 704.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.191,
+      "description": "power_consumption is 7.19\u03c3 above the normal baseline (observed=4.6197, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 705.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.304,
+      "description": "power_consumption is 7.30\u03c3 above the normal baseline (observed=4.6568, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 706.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.504,
+      "description": "power_consumption is 7.50\u03c3 above the normal baseline (observed=4.7229, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 707.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.243,
+      "description": "power_consumption is 7.24\u03c3 above the normal baseline (observed=4.6368, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 708.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.543,
+      "description": "power_consumption is 7.54\u03c3 above the normal baseline (observed=4.7359, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 709.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.829,
+      "description": "power_consumption is 7.83\u03c3 above the normal baseline (observed=4.8301, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 710.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.061,
+      "description": "power_consumption is 8.06\u03c3 above the normal baseline (observed=4.9064, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 711.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.511,
+      "description": "power_consumption is 8.51\u03c3 above the normal baseline (observed=5.0548, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 712.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.631,
+      "description": "power_consumption is 8.63\u03c3 above the normal baseline (observed=5.0944, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 713.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.446,
+      "description": "power_consumption is 8.45\u03c3 above the normal baseline (observed=5.0334, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 714.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.384,
+      "description": "power_consumption is 8.38\u03c3 above the normal baseline (observed=5.0129, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 715.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.721,
+      "description": "power_consumption is 8.72\u03c3 above the normal baseline (observed=5.1240, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 716.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.89,
+      "description": "power_consumption is 8.89\u03c3 above the normal baseline (observed=5.1799, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 717.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.637,
+      "description": "power_consumption is 8.64\u03c3 above the normal baseline (observed=5.0964, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 718.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.889,
+      "description": "power_consumption is 7.89\u03c3 above the normal baseline (observed=4.8497, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 719.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.578,
+      "description": "power_consumption is 8.58\u03c3 above the normal baseline (observed=5.0770, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 720.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.537,
+      "description": "power_consumption is 8.54\u03c3 above the normal baseline (observed=5.0636, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 721.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.596,
+      "description": "power_consumption is 8.60\u03c3 above the normal baseline (observed=5.0829, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 722.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.732,
+      "description": "power_consumption is 8.73\u03c3 above the normal baseline (observed=5.1279, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 723.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 9.649,
+      "description": "power_consumption is 9.65\u03c3 above the normal baseline (observed=5.4300, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 724.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.904,
+      "description": "power_consumption is 8.90\u03c3 above the normal baseline (observed=5.1844, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 725.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 9.204,
+      "description": "power_consumption is 9.20\u03c3 above the normal baseline (observed=5.2834, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 726.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 9.815,
+      "description": "power_consumption is 9.81\u03c3 above the normal baseline (observed=5.4848, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 727.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 9.379,
+      "description": "power_consumption is 9.38\u03c3 above the normal baseline (observed=5.3410, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 728.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 9.806,
+      "description": "power_consumption is 9.81\u03c3 above the normal baseline (observed=5.4818, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 729.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 10.374,
+      "description": "power_consumption is 10.37\u03c3 above the normal baseline (observed=5.6693, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 730.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.577,
+      "description": "power_consumption is 8.58\u03c3 above the normal baseline (observed=5.0767, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 731.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 9.342,
+      "description": "power_consumption is 9.34\u03c3 above the normal baseline (observed=5.3288, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 732.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 9.157,
+      "description": "power_consumption is 9.16\u03c3 above the normal baseline (observed=5.2680, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 733.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 9.132,
+      "description": "power_consumption is 9.13\u03c3 above the normal baseline (observed=5.2595, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 734.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.314,
+      "description": "power_consumption is 8.31\u03c3 above the normal baseline (observed=4.9899, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 735.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.623,
+      "description": "power_consumption is 7.62\u03c3 above the normal baseline (observed=4.7620, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 736.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.977,
+      "description": "power_consumption is 8.98\u03c3 above the normal baseline (observed=5.2087, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 737.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.222,
+      "description": "power_consumption is 8.22\u03c3 above the normal baseline (observed=4.9596, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 738.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.499,
+      "description": "power_consumption is 8.50\u03c3 above the normal baseline (observed=5.0510, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 739.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 9.391,
+      "description": "power_consumption is 9.39\u03c3 above the normal baseline (observed=5.3449, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 740.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.577,
+      "description": "power_consumption is 8.58\u03c3 above the normal baseline (observed=5.0768, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 741.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.404,
+      "description": "power_consumption is 8.40\u03c3 above the normal baseline (observed=5.0197, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 742.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.937,
+      "description": "power_consumption is 7.94\u03c3 above the normal baseline (observed=4.8658, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 742.0,
+      "sensor_type": "motor_vibration",
+      "severity_score": 3.179,
+      "description": "motor_vibration is 3.18\u03c3 below the normal baseline (observed=0.2337, baseline_mean=0.2979).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 743.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.81,
+      "description": "power_consumption is 7.81\u03c3 above the normal baseline (observed=4.8238, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 744.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.941,
+      "description": "power_consumption is 6.94\u03c3 above the normal baseline (observed=4.5374, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 745.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.792,
+      "description": "power_consumption is 6.79\u03c3 above the normal baseline (observed=4.4883, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 746.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.906,
+      "description": "power_consumption is 7.91\u03c3 above the normal baseline (observed=4.8553, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 747.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.599,
+      "description": "power_consumption is 7.60\u03c3 above the normal baseline (observed=4.7542, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 748.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.436,
+      "description": "power_consumption is 7.44\u03c3 above the normal baseline (observed=4.7005, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 749.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.519,
+      "description": "power_consumption is 7.52\u03c3 above the normal baseline (observed=4.7277, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 750.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.491,
+      "description": "power_consumption is 7.49\u03c3 above the normal baseline (observed=4.7185, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 751.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.267,
+      "description": "power_consumption is 6.27\u03c3 above the normal baseline (observed=4.3150, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 752.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.188,
+      "description": "power_consumption is 5.19\u03c3 above the normal baseline (observed=3.9592, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 753.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.801,
+      "description": "power_consumption is 5.80\u03c3 above the normal baseline (observed=4.1613, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 754.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.637,
+      "description": "power_consumption is 5.64\u03c3 above the normal baseline (observed=4.1072, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 755.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.559,
+      "description": "power_consumption is 6.56\u03c3 above the normal baseline (observed=4.4114, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 756.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.381,
+      "description": "power_consumption is 5.38\u03c3 above the normal baseline (observed=4.0229, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 757.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.021,
+      "description": "power_consumption is 6.02\u03c3 above the normal baseline (observed=4.2339, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 758.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.21,
+      "description": "power_consumption is 5.21\u03c3 above the normal baseline (observed=3.9664, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 759.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.751,
+      "description": "power_consumption is 5.75\u03c3 above the normal baseline (observed=4.1449, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 760.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.394,
+      "description": "power_consumption is 5.39\u03c3 above the normal baseline (observed=4.0272, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 761.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.466,
+      "description": "power_consumption is 4.47\u03c3 above the normal baseline (observed=3.7214, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 762.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.858,
+      "description": "power_consumption is 4.86\u03c3 above the normal baseline (observed=3.8505, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 763.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.775,
+      "description": "power_consumption is 4.77\u03c3 above the normal baseline (observed=3.8231, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 764.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.022,
+      "description": "power_consumption is 4.02\u03c3 above the normal baseline (observed=3.5749, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 765.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.694,
+      "description": "power_consumption is 4.69\u03c3 above the normal baseline (observed=3.7965, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 766.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.605,
+      "description": "power_consumption is 4.61\u03c3 above the normal baseline (observed=3.7671, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 767.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.272,
+      "description": "power_consumption is 5.27\u03c3 above the normal baseline (observed=3.9871, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 768.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.577,
+      "description": "power_consumption is 5.58\u03c3 above the normal baseline (observed=4.0876, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 769.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.402,
+      "description": "power_consumption is 4.40\u03c3 above the normal baseline (observed=3.7001, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 770.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.176,
+      "description": "power_consumption is 4.18\u03c3 above the normal baseline (observed=3.6255, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 771.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.217,
+      "description": "power_consumption is 4.22\u03c3 above the normal baseline (observed=3.6393, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 772.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.747,
+      "description": "power_consumption is 4.75\u03c3 above the normal baseline (observed=3.8139, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 773.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.485,
+      "description": "power_consumption is 4.48\u03c3 above the normal baseline (observed=3.7275, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 774.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.242,
+      "description": "power_consumption is 4.24\u03c3 above the normal baseline (observed=3.6473, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 775.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.091,
+      "description": "power_consumption is 4.09\u03c3 above the normal baseline (observed=3.5975, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 776.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 3.77,
+      "description": "power_consumption is 3.77\u03c3 above the normal baseline (observed=3.4918, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 777.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.315,
+      "description": "power_consumption is 4.31\u03c3 above the normal baseline (observed=3.6714, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 778.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.85,
+      "description": "power_consumption is 4.85\u03c3 above the normal baseline (observed=3.8480, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 779.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.284,
+      "description": "power_consumption is 4.28\u03c3 above the normal baseline (observed=3.6613, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 780.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 3.922,
+      "description": "power_consumption is 3.92\u03c3 above the normal baseline (observed=3.5419, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 781.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.943,
+      "description": "power_consumption is 4.94\u03c3 above the normal baseline (observed=3.8784, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 782.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.443,
+      "description": "power_consumption is 4.44\u03c3 above the normal baseline (observed=3.7138, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 783.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.789,
+      "description": "power_consumption is 4.79\u03c3 above the normal baseline (observed=3.8278, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 784.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.586,
+      "description": "power_consumption is 4.59\u03c3 above the normal baseline (observed=3.7609, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 785.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.058,
+      "description": "power_consumption is 4.06\u03c3 above the normal baseline (observed=3.5866, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 786.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.307,
+      "description": "power_consumption is 4.31\u03c3 above the normal baseline (observed=3.6688, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 787.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 3.926,
+      "description": "power_consumption is 3.93\u03c3 above the normal baseline (observed=3.5431, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 788.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.172,
+      "description": "power_consumption is 5.17\u03c3 above the normal baseline (observed=3.9539, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 789.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.271,
+      "description": "power_consumption is 5.27\u03c3 above the normal baseline (observed=3.9865, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 790.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.609,
+      "description": "power_consumption is 5.61\u03c3 above the normal baseline (observed=4.0982, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 791.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.076,
+      "description": "power_consumption is 6.08\u03c3 above the normal baseline (observed=4.2522, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 792.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.083,
+      "description": "power_consumption is 6.08\u03c3 above the normal baseline (observed=4.2543, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 793.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.116,
+      "description": "power_consumption is 6.12\u03c3 above the normal baseline (observed=4.2654, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 794.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.216,
+      "description": "power_consumption is 6.22\u03c3 above the normal baseline (observed=4.2983, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 795.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.841,
+      "description": "power_consumption is 6.84\u03c3 above the normal baseline (observed=4.5043, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 796.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.724,
+      "description": "power_consumption is 6.72\u03c3 above the normal baseline (observed=4.4656, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 797.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.067,
+      "description": "power_consumption is 6.07\u03c3 above the normal baseline (observed=4.2490, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 798.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.122,
+      "description": "power_consumption is 6.12\u03c3 above the normal baseline (observed=4.2672, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 799.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.604,
+      "description": "power_consumption is 6.60\u03c3 above the normal baseline (observed=4.4263, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 800.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.203,
+      "description": "power_consumption is 6.20\u03c3 above the normal baseline (observed=4.2939, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 801.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.86,
+      "description": "power_consumption is 6.86\u03c3 above the normal baseline (observed=4.5107, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 802.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.352,
+      "description": "power_consumption is 7.35\u03c3 above the normal baseline (observed=4.6728, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 803.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.16,
+      "description": "power_consumption is 7.16\u03c3 above the normal baseline (observed=4.6096, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 804.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.408,
+      "description": "power_consumption is 7.41\u03c3 above the normal baseline (observed=4.6912, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 805.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.997,
+      "description": "power_consumption is 7.00\u03c3 above the normal baseline (observed=4.5556, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 806.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.796,
+      "description": "power_consumption is 7.80\u03c3 above the normal baseline (observed=4.8192, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 807.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.794,
+      "description": "power_consumption is 7.79\u03c3 above the normal baseline (observed=4.8186, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 808.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.722,
+      "description": "power_consumption is 7.72\u03c3 above the normal baseline (observed=4.7949, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 809.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.509,
+      "description": "power_consumption is 7.51\u03c3 above the normal baseline (observed=4.7247, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 810.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.558,
+      "description": "power_consumption is 8.56\u03c3 above the normal baseline (observed=5.0703, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 811.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.683,
+      "description": "power_consumption is 8.68\u03c3 above the normal baseline (observed=5.1117, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 812.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.724,
+      "description": "power_consumption is 8.72\u03c3 above the normal baseline (observed=5.1252, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 813.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.829,
+      "description": "power_consumption is 8.83\u03c3 above the normal baseline (observed=5.1596, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 814.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.73,
+      "description": "power_consumption is 8.73\u03c3 above the normal baseline (observed=5.1270, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 815.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.47,
+      "description": "power_consumption is 8.47\u03c3 above the normal baseline (observed=5.0413, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 816.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.658,
+      "description": "power_consumption is 8.66\u03c3 above the normal baseline (observed=5.1034, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 817.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.934,
+      "description": "power_consumption is 8.93\u03c3 above the normal baseline (observed=5.1943, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 818.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 9.307,
+      "description": "power_consumption is 9.31\u03c3 above the normal baseline (observed=5.3174, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 819.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 9.952,
+      "description": "power_consumption is 9.95\u03c3 above the normal baseline (observed=5.5299, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 820.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 10.107,
+      "description": "power_consumption is 10.11\u03c3 above the normal baseline (observed=5.5810, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 821.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 9.394,
+      "description": "power_consumption is 9.39\u03c3 above the normal baseline (observed=5.3461, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 822.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 9.277,
+      "description": "power_consumption is 9.28\u03c3 above the normal baseline (observed=5.3076, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 823.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.796,
+      "description": "power_consumption is 8.80\u03c3 above the normal baseline (observed=5.1488, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 824.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 9.024,
+      "description": "power_consumption is 9.02\u03c3 above the normal baseline (observed=5.2242, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 825.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 9.411,
+      "description": "power_consumption is 9.41\u03c3 above the normal baseline (observed=5.3517, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 826.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.885,
+      "description": "power_consumption is 8.88\u03c3 above the normal baseline (observed=5.1781, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 827.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 9.191,
+      "description": "power_consumption is 9.19\u03c3 above the normal baseline (observed=5.2790, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 828.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.749,
+      "description": "power_consumption is 8.75\u03c3 above the normal baseline (observed=5.1334, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 829.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 9.208,
+      "description": "power_consumption is 9.21\u03c3 above the normal baseline (observed=5.2847, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 830.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 9.104,
+      "description": "power_consumption is 9.10\u03c3 above the normal baseline (observed=5.2504, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 831.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 9.707,
+      "description": "power_consumption is 9.71\u03c3 above the normal baseline (observed=5.4494, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 832.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 9.533,
+      "description": "power_consumption is 9.53\u03c3 above the normal baseline (observed=5.3919, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 833.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 9.093,
+      "description": "power_consumption is 9.09\u03c3 above the normal baseline (observed=5.2469, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 834.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.992,
+      "description": "power_consumption is 8.99\u03c3 above the normal baseline (observed=5.2136, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 835.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.976,
+      "description": "power_consumption is 8.98\u03c3 above the normal baseline (observed=5.2081, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 836.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.484,
+      "description": "power_consumption is 8.48\u03c3 above the normal baseline (observed=5.0460, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 837.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 9.021,
+      "description": "power_consumption is 9.02\u03c3 above the normal baseline (observed=5.2231, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 838.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.938,
+      "description": "power_consumption is 7.94\u03c3 above the normal baseline (observed=4.8661, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 839.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.116,
+      "description": "power_consumption is 7.12\u03c3 above the normal baseline (observed=4.5950, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 840.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.26,
+      "description": "power_consumption is 7.26\u03c3 above the normal baseline (observed=4.6423, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 841.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.721,
+      "description": "power_consumption is 8.72\u03c3 above the normal baseline (observed=5.1240, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 842.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.993,
+      "description": "power_consumption is 7.99\u03c3 above the normal baseline (observed=4.8840, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 843.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.166,
+      "description": "power_consumption is 7.17\u03c3 above the normal baseline (observed=4.6115, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 844.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.307,
+      "description": "power_consumption is 7.31\u03c3 above the normal baseline (observed=4.6580, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 845.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.73,
+      "description": "power_consumption is 6.73\u03c3 above the normal baseline (observed=4.4676, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 846.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.783,
+      "description": "power_consumption is 7.78\u03c3 above the normal baseline (observed=4.8148, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 847.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.101,
+      "description": "power_consumption is 8.10\u03c3 above the normal baseline (observed=4.9198, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 848.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.877,
+      "description": "power_consumption is 7.88\u03c3 above the normal baseline (observed=4.8458, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 849.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.055,
+      "description": "power_consumption is 8.05\u03c3 above the normal baseline (observed=4.9044, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 850.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.745,
+      "description": "power_consumption is 7.75\u03c3 above the normal baseline (observed=4.8024, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 851.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.296,
+      "description": "power_consumption is 6.30\u03c3 above the normal baseline (observed=4.3245, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 852.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.866,
+      "description": "power_consumption is 6.87\u03c3 above the normal baseline (observed=4.5127, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 853.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.254,
+      "description": "power_consumption is 6.25\u03c3 above the normal baseline (observed=4.3108, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 854.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.052,
+      "description": "power_consumption is 6.05\u03c3 above the normal baseline (observed=4.2440, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 855.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.947,
+      "description": "power_consumption is 5.95\u03c3 above the normal baseline (observed=4.2094, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 856.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.595,
+      "description": "power_consumption is 5.60\u03c3 above the normal baseline (observed=4.0935, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 857.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.482,
+      "description": "power_consumption is 5.48\u03c3 above the normal baseline (observed=4.0563, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 858.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.878,
+      "description": "power_consumption is 5.88\u03c3 above the normal baseline (observed=4.1868, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 859.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.471,
+      "description": "power_consumption is 5.47\u03c3 above the normal baseline (observed=4.0526, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 860.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.096,
+      "description": "power_consumption is 5.10\u03c3 above the normal baseline (observed=3.9291, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 861.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.721,
+      "description": "power_consumption is 5.72\u03c3 above the normal baseline (observed=4.1351, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 862.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.521,
+      "description": "power_consumption is 4.52\u03c3 above the normal baseline (observed=3.7395, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 863.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.934,
+      "description": "power_consumption is 4.93\u03c3 above the normal baseline (observed=3.8757, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 864.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.157,
+      "description": "power_consumption is 5.16\u03c3 above the normal baseline (observed=3.9490, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 865.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.693,
+      "description": "power_consumption is 4.69\u03c3 above the normal baseline (observed=3.7960, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 866.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.103,
+      "description": "power_consumption is 5.10\u03c3 above the normal baseline (observed=3.9314, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 867.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.985,
+      "description": "power_consumption is 4.98\u03c3 above the normal baseline (observed=3.8923, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 868.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.373,
+      "description": "power_consumption is 4.37\u03c3 above the normal baseline (observed=3.6905, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 869.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 3.639,
+      "description": "power_consumption is 3.64\u03c3 above the normal baseline (observed=3.4485, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 870.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 3.95,
+      "description": "power_consumption is 3.95\u03c3 above the normal baseline (observed=3.5510, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 871.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 3.612,
+      "description": "power_consumption is 3.61\u03c3 above the normal baseline (observed=3.4397, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 872.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.265,
+      "description": "power_consumption is 4.27\u03c3 above the normal baseline (observed=3.6550, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 873.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.006,
+      "description": "power_consumption is 5.01\u03c3 above the normal baseline (observed=3.8992, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 874.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.911,
+      "description": "power_consumption is 4.91\u03c3 above the normal baseline (observed=3.8681, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 875.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.272,
+      "description": "power_consumption is 4.27\u03c3 above the normal baseline (observed=3.6574, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 876.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.292,
+      "description": "power_consumption is 4.29\u03c3 above the normal baseline (observed=3.6638, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 877.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.268,
+      "description": "power_consumption is 5.27\u03c3 above the normal baseline (observed=3.9856, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 878.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.203,
+      "description": "power_consumption is 4.20\u03c3 above the normal baseline (observed=3.6344, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 879.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 3.995,
+      "description": "power_consumption is 3.99\u03c3 above the normal baseline (observed=3.5658, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 880.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.146,
+      "description": "power_consumption is 4.15\u03c3 above the normal baseline (observed=3.6158, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 881.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.5,
+      "description": "power_consumption is 4.50\u03c3 above the normal baseline (observed=3.7323, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 882.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.177,
+      "description": "power_consumption is 5.18\u03c3 above the normal baseline (observed=3.9556, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 883.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 3.435,
+      "description": "power_consumption is 3.43\u03c3 above the normal baseline (observed=3.3812, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 884.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.119,
+      "description": "power_consumption is 4.12\u03c3 above the normal baseline (observed=3.6069, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 885.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.897,
+      "description": "power_consumption is 4.90\u03c3 above the normal baseline (observed=3.8633, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 886.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.559,
+      "description": "power_consumption is 4.56\u03c3 above the normal baseline (observed=3.7520, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 887.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.121,
+      "description": "power_consumption is 4.12\u03c3 above the normal baseline (observed=3.6076, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 888.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.77,
+      "description": "power_consumption is 4.77\u03c3 above the normal baseline (observed=3.8215, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 889.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.501,
+      "description": "power_consumption is 5.50\u03c3 above the normal baseline (observed=4.0625, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 890.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.348,
+      "description": "power_consumption is 6.35\u03c3 above the normal baseline (observed=4.3419, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 891.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.741,
+      "description": "power_consumption is 5.74\u03c3 above the normal baseline (observed=4.1415, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 892.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.847,
+      "description": "power_consumption is 5.85\u03c3 above the normal baseline (observed=4.1766, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 893.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.924,
+      "description": "power_consumption is 5.92\u03c3 above the normal baseline (observed=4.2020, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 894.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.015,
+      "description": "power_consumption is 5.02\u03c3 above the normal baseline (observed=3.9023, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 895.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.321,
+      "description": "power_consumption is 5.32\u03c3 above the normal baseline (observed=4.0032, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 896.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.262,
+      "description": "power_consumption is 6.26\u03c3 above the normal baseline (observed=4.3135, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 897.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.149,
+      "description": "power_consumption is 6.15\u03c3 above the normal baseline (observed=4.2761, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 898.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.518,
+      "description": "power_consumption is 6.52\u03c3 above the normal baseline (observed=4.3979, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 899.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.195,
+      "description": "power_consumption is 6.20\u03c3 above the normal baseline (observed=4.2914, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 900.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.389,
+      "description": "power_consumption is 6.39\u03c3 above the normal baseline (observed=4.3553, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 901.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.922,
+      "description": "power_consumption is 6.92\u03c3 above the normal baseline (observed=4.5309, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 902.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.275,
+      "description": "power_consumption is 7.27\u03c3 above the normal baseline (observed=4.6473, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 903.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.216,
+      "description": "power_consumption is 7.22\u03c3 above the normal baseline (observed=4.6278, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 904.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.145,
+      "description": "power_consumption is 7.14\u03c3 above the normal baseline (observed=4.6044, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 905.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.992,
+      "description": "power_consumption is 6.99\u03c3 above the normal baseline (observed=4.5541, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 906.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.317,
+      "description": "power_consumption is 7.32\u03c3 above the normal baseline (observed=4.6614, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 907.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.349,
+      "description": "power_consumption is 7.35\u03c3 above the normal baseline (observed=4.6719, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 908.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.931,
+      "description": "power_consumption is 7.93\u03c3 above the normal baseline (observed=4.8637, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 909.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.331,
+      "description": "power_consumption is 8.33\u03c3 above the normal baseline (observed=4.9957, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 910.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.755,
+      "description": "power_consumption is 7.75\u03c3 above the normal baseline (observed=4.8055, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 911.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.734,
+      "description": "power_consumption is 7.73\u03c3 above the normal baseline (observed=4.7988, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 912.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.186,
+      "description": "power_consumption is 8.19\u03c3 above the normal baseline (observed=4.9476, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 913.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.055,
+      "description": "power_consumption is 8.06\u03c3 above the normal baseline (observed=4.9047, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 914.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.176,
+      "description": "power_consumption is 8.18\u03c3 above the normal baseline (observed=4.9443, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 915.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.105,
+      "description": "power_consumption is 8.11\u03c3 above the normal baseline (observed=4.9211, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 915.0,
+      "sensor_type": "motor_vibration",
+      "severity_score": 3.085,
+      "description": "motor_vibration is 3.08\u03c3 above the normal baseline (observed=0.3602, baseline_mean=0.2979).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 916.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.852,
+      "description": "power_consumption is 8.85\u03c3 above the normal baseline (observed=5.1675, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 917.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.368,
+      "description": "power_consumption is 8.37\u03c3 above the normal baseline (observed=5.0077, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 918.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.817,
+      "description": "power_consumption is 8.82\u03c3 above the normal baseline (observed=5.1557, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 919.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.733,
+      "description": "power_consumption is 8.73\u03c3 above the normal baseline (observed=5.1281, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 920.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 9.152,
+      "description": "power_consumption is 9.15\u03c3 above the normal baseline (observed=5.2664, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 921.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 9.381,
+      "description": "power_consumption is 9.38\u03c3 above the normal baseline (observed=5.3418, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 922.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 9.355,
+      "description": "power_consumption is 9.36\u03c3 above the normal baseline (observed=5.3332, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 923.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.712,
+      "description": "power_consumption is 8.71\u03c3 above the normal baseline (observed=5.1211, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 924.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 9.026,
+      "description": "power_consumption is 9.03\u03c3 above the normal baseline (observed=5.2246, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 925.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 9.77,
+      "description": "power_consumption is 9.77\u03c3 above the normal baseline (observed=5.4699, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 926.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 9.041,
+      "description": "power_consumption is 9.04\u03c3 above the normal baseline (observed=5.2296, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 927.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 9.171,
+      "description": "power_consumption is 9.17\u03c3 above the normal baseline (observed=5.2726, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 928.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 9.049,
+      "description": "power_consumption is 9.05\u03c3 above the normal baseline (observed=5.2322, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 929.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.615,
+      "description": "power_consumption is 8.61\u03c3 above the normal baseline (observed=5.0891, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 930.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.514,
+      "description": "power_consumption is 8.51\u03c3 above the normal baseline (observed=5.0559, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 931.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 9.115,
+      "description": "power_consumption is 9.11\u03c3 above the normal baseline (observed=5.2539, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 932.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 9.414,
+      "description": "power_consumption is 9.41\u03c3 above the normal baseline (observed=5.3527, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 933.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.849,
+      "description": "power_consumption is 8.85\u03c3 above the normal baseline (observed=5.1663, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 934.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 9.114,
+      "description": "power_consumption is 9.11\u03c3 above the normal baseline (observed=5.2536, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 935.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.058,
+      "description": "power_consumption is 8.06\u03c3 above the normal baseline (observed=4.9057, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 936.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.994,
+      "description": "power_consumption is 7.99\u03c3 above the normal baseline (observed=4.8845, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 937.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.081,
+      "description": "power_consumption is 8.08\u03c3 above the normal baseline (observed=4.9132, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 938.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.696,
+      "description": "power_consumption is 8.70\u03c3 above the normal baseline (observed=5.1159, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 939.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.601,
+      "description": "power_consumption is 8.60\u03c3 above the normal baseline (observed=5.0846, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 940.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.796,
+      "description": "power_consumption is 6.80\u03c3 above the normal baseline (observed=4.4894, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 941.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.015,
+      "description": "power_consumption is 8.02\u03c3 above the normal baseline (observed=4.8914, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 942.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.085,
+      "description": "power_consumption is 8.08\u03c3 above the normal baseline (observed=4.9144, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 943.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.165,
+      "description": "power_consumption is 8.16\u03c3 above the normal baseline (observed=4.9407, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 944.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 8.284,
+      "description": "power_consumption is 8.28\u03c3 above the normal baseline (observed=4.9801, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 945.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.196,
+      "description": "power_consumption is 7.20\u03c3 above the normal baseline (observed=4.6213, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 946.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.593,
+      "description": "power_consumption is 7.59\u03c3 above the normal baseline (observed=4.7521, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 947.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.395,
+      "description": "power_consumption is 7.39\u03c3 above the normal baseline (observed=4.6868, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 948.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.351,
+      "description": "power_consumption is 7.35\u03c3 above the normal baseline (observed=4.6723, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 949.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.772,
+      "description": "power_consumption is 7.77\u03c3 above the normal baseline (observed=4.8113, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 950.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 7.637,
+      "description": "power_consumption is 7.64\u03c3 above the normal baseline (observed=4.7668, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 951.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.961,
+      "description": "power_consumption is 6.96\u03c3 above the normal baseline (observed=4.5439, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 952.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.737,
+      "description": "power_consumption is 6.74\u03c3 above the normal baseline (observed=4.4701, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 953.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.528,
+      "description": "power_consumption is 6.53\u03c3 above the normal baseline (observed=4.4011, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 954.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.204,
+      "description": "power_consumption is 6.20\u03c3 above the normal baseline (observed=4.2943, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 955.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.531,
+      "description": "power_consumption is 5.53\u03c3 above the normal baseline (observed=4.0724, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 956.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.742,
+      "description": "power_consumption is 6.74\u03c3 above the normal baseline (observed=4.4715, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 957.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.786,
+      "description": "power_consumption is 5.79\u03c3 above the normal baseline (observed=4.1565, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 958.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.475,
+      "description": "power_consumption is 6.47\u03c3 above the normal baseline (observed=4.3836, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 959.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.664,
+      "description": "power_consumption is 6.66\u03c3 above the normal baseline (observed=4.4458, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 960.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.104,
+      "description": "power_consumption is 6.10\u03c3 above the normal baseline (observed=4.2612, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 961.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.281,
+      "description": "power_consumption is 6.28\u03c3 above the normal baseline (observed=4.3196, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 962.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.822,
+      "description": "power_consumption is 4.82\u03c3 above the normal baseline (observed=3.8386, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 963.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.618,
+      "description": "power_consumption is 4.62\u03c3 above the normal baseline (observed=3.7712, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 964.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.39,
+      "description": "power_consumption is 4.39\u03c3 above the normal baseline (observed=3.6963, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 965.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.983,
+      "description": "power_consumption is 4.98\u03c3 above the normal baseline (observed=3.8916, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 966.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.229,
+      "description": "power_consumption is 5.23\u03c3 above the normal baseline (observed=3.9728, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 967.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.574,
+      "description": "power_consumption is 4.57\u03c3 above the normal baseline (observed=3.7567, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 968.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.058,
+      "description": "power_consumption is 4.06\u03c3 above the normal baseline (observed=3.5868, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 969.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.252,
+      "description": "power_consumption is 5.25\u03c3 above the normal baseline (observed=3.9803, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 970.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.696,
+      "description": "power_consumption is 4.70\u03c3 above the normal baseline (observed=3.7971, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 971.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.409,
+      "description": "power_consumption is 5.41\u03c3 above the normal baseline (observed=4.0320, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 972.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.549,
+      "description": "power_consumption is 4.55\u03c3 above the normal baseline (observed=3.7487, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 973.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 3.851,
+      "description": "power_consumption is 3.85\u03c3 above the normal baseline (observed=3.5184, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 974.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 3.69,
+      "description": "power_consumption is 3.69\u03c3 above the normal baseline (observed=3.4653, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 975.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.429,
+      "description": "power_consumption is 5.43\u03c3 above the normal baseline (observed=4.0387, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 976.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.018,
+      "description": "power_consumption is 4.02\u03c3 above the normal baseline (observed=3.5735, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 977.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.187,
+      "description": "power_consumption is 4.19\u03c3 above the normal baseline (observed=3.6291, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 978.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.37,
+      "description": "power_consumption is 4.37\u03c3 above the normal baseline (observed=3.6895, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 979.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 3.781,
+      "description": "power_consumption is 3.78\u03c3 above the normal baseline (observed=3.4955, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 980.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.292,
+      "description": "power_consumption is 4.29\u03c3 above the normal baseline (observed=3.6639, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 981.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 3.775,
+      "description": "power_consumption is 3.77\u03c3 above the normal baseline (observed=3.4933, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 982.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.937,
+      "description": "power_consumption is 4.94\u03c3 above the normal baseline (observed=3.8766, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 983.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.829,
+      "description": "power_consumption is 4.83\u03c3 above the normal baseline (observed=3.8410, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 984.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.007,
+      "description": "power_consumption is 5.01\u03c3 above the normal baseline (observed=3.8996, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 985.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.048,
+      "description": "power_consumption is 5.05\u03c3 above the normal baseline (observed=3.9132, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 986.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.815,
+      "description": "power_consumption is 5.82\u03c3 above the normal baseline (observed=4.1661, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 987.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.232,
+      "description": "power_consumption is 5.23\u03c3 above the normal baseline (observed=3.9739, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 988.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.508,
+      "description": "power_consumption is 5.51\u03c3 above the normal baseline (observed=4.0647, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 989.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.322,
+      "description": "power_consumption is 5.32\u03c3 above the normal baseline (observed=4.0035, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 990.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.864,
+      "description": "power_consumption is 4.86\u03c3 above the normal baseline (observed=3.8524, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 991.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 4.746,
+      "description": "power_consumption is 4.75\u03c3 above the normal baseline (observed=3.8136, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 992.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.24,
+      "description": "power_consumption is 5.24\u03c3 above the normal baseline (observed=3.9764, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 993.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.404,
+      "description": "power_consumption is 5.40\u03c3 above the normal baseline (observed=4.0306, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 994.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.799,
+      "description": "power_consumption is 5.80\u03c3 above the normal baseline (observed=4.1607, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 995.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.737,
+      "description": "power_consumption is 5.74\u03c3 above the normal baseline (observed=4.1403, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 996.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.097,
+      "description": "power_consumption is 6.10\u03c3 above the normal baseline (observed=4.2589, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 997.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.74,
+      "description": "power_consumption is 5.74\u03c3 above the normal baseline (observed=4.1413, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 998.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 5.547,
+      "description": "power_consumption is 5.55\u03c3 above the normal baseline (observed=4.0778, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 999.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.563,
+      "description": "power_consumption is 6.56\u03c3 above the normal baseline (observed=4.4128, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    },
+    {
+      "time": 1000.0,
+      "sensor_type": "power_consumption",
+      "severity_score": 6.568,
+      "description": "power_consumption is 6.57\u03c3 above the normal baseline (observed=4.4144, baseline_mean=2.2488).",
+      "detection_method": "z_score"
+    }
+  ]
+}
