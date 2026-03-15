@@ -61,7 +61,7 @@ log = logging.getLogger(__name__)
 _SRC_DIR      = Path(__file__).parent
 _PROJECT_ROOT = _SRC_DIR.parent
 DATA_DIR      = _PROJECT_ROOT / "data"
-OUTPUTS_DIR   = _PROJECT_ROOT / "outputs"
+OUTPUTS_DIR   = _PROJECT_ROOT / "outputs" / "figures"
 
 # ---------------------------------------------------------------------------
 # Detection hyper-parameters
